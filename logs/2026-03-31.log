@@ -1,0 +1,126 @@
+2026-03-31 14:41:52,964 - streamlit_app - INFO - Streamlit app started
+2026-03-31 14:41:52,964 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 14:41:52,966 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 14:41:54,002 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 14:41:54,020 - streamlit_app - INFO - User input collected
+2026-03-31 14:41:54,060 - streamlit_app - INFO - Input DataFrame created: [{'age': 39, 'workclass': 'self-emp-not-inc', 'education-num': 16, 'marital-status': 'married', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'female', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 14:41:54,125 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 26)
+2026-03-31 15:03:11,069 - TRAIN - INFO - Starting training pipeline...
+2026-03-31 15:03:11,177 - TRAIN - INFO - Loaded data: (32561, 15)
+2026-03-31 15:03:11,646 - TRAIN - INFO - After clean_data: (32561, 13)
+2026-03-31 15:03:12,031 - TRAIN - INFO - After group_rare_categories: (32561, 13)
+2026-03-31 15:03:12,047 - TRAIN - INFO - After new_features: (32561, 16)
+2026-03-31 15:03:12,111 - TRAIN - INFO - Train: (26048, 15), Test: (6513, 15)
+2026-03-31 15:03:12,119 - TRAIN - INFO - Model built.
+2026-03-31 15:03:24,687 - TRAIN - INFO - Model training complete.
+2026-03-31 15:03:25,257 - TRAIN - INFO - Final F1 score: 0.7116
+2026-03-31 15:03:26,024 - TRAIN - INFO - Model saved to models/salary_model.joblib
+2026-03-31 15:03:26,024 - TRAIN - INFO - Training pipeline finished.
+2026-03-31 15:04:16,659 - salary_predictor - INFO - Starting salary prediction pipeline
+2026-03-31 15:04:16,659 - salary_predictor - INFO - Loading model from: models/salary_model.joblib
+2026-03-31 15:04:17,647 - salary_predictor - INFO - Model loaded successfully
+2026-03-31 15:04:17,647 - salary_predictor - INFO - Reading input CSV: data/new_inference_data.csv
+2026-03-31 15:04:17,732 - salary_predictor - INFO - Loaded input data with shape: (32561, 14)
+2026-03-31 15:04:17,732 - salary_predictor - INFO - Starting preprocessing pipeline
+2026-03-31 15:04:18,008 - salary_predictor - INFO - After clean_data: (32561, 12)
+2026-03-31 15:04:18,260 - salary_predictor - INFO - After group_rare_categories: (32561, 12)
+2026-03-31 15:04:18,279 - salary_predictor - INFO - After new_features: (32561, 15)
+2026-03-31 15:04:18,279 - salary_predictor - INFO - Preprocessing complete
+2026-03-31 15:04:18,279 - salary_predictor - INFO - Prepared data shape: (32561, 15)
+2026-03-31 15:04:18,279 - salary_predictor - INFO - Beginning prediction step
+2026-03-31 15:04:18,279 - salary_predictor - INFO - Running model.predict()
+2026-03-31 15:04:19,164 - salary_predictor - INFO - Generated 32561 predictions
+2026-03-31 15:04:19,169 - salary_predictor - INFO - Saving predictions to: salary_predictions.csv
+2026-03-31 15:04:19,364 - salary_predictor - INFO - Predictions saved successfully to salary_predictions.csv
+2026-03-31 15:04:19,369 - salary_predictor - INFO - Salary prediction pipeline completed successfully
+2026-03-31 15:05:57,493 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:05:57,493 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:05:58,099 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:05:59,285 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:05:59,301 - streamlit_app - INFO - User input collected
+2026-03-31 15:05:59,390 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'self-emp-not-inc', 'education-num': 10, 'marital-status': 'married-civ-spouse', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 40, 'native-country': 'united-states'}]
+2026-03-31 15:05:59,476 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:06:05,037 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:06:05,037 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:06:05,043 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:06:05,947 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:06:05,961 - streamlit_app - INFO - User input collected
+2026-03-31 15:06:05,965 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 10, 'marital-status': 'married-civ-spouse', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 40, 'native-country': 'united-states'}]
+2026-03-31 15:06:06,013 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:06:21,957 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:06:21,961 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:06:21,965 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:06:22,963 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:06:22,975 - streamlit_app - INFO - User input collected
+2026-03-31 15:06:22,981 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 10, 'marital-status': 'married-civ-spouse', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 15:06:23,026 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:06:28,887 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:06:28,891 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:06:28,894 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:06:29,746 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:06:29,760 - streamlit_app - INFO - User input collected
+2026-03-31 15:06:29,770 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 10, 'marital-status': 'married-civ-spouse', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 15:06:29,819 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:06:58,902 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:06:58,902 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:06:58,902 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:06:59,917 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:06:59,937 - streamlit_app - INFO - User input collected
+2026-03-31 15:06:59,942 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 10, 'marital-status': 'divorced', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 15:06:59,982 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:07:02,134 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:07:02,134 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:07:02,142 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:07:02,909 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:07:02,921 - streamlit_app - INFO - User input collected
+2026-03-31 15:07:02,924 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 10, 'marital-status': 'divorced', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 15:07:02,956 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:07:08,939 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:07:08,939 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:07:08,950 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:07:09,026 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:07:09,028 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:07:09,032 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:07:09,211 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:07:09,216 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:07:09,216 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:07:09,422 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:07:09,422 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:07:09,433 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:07:09,614 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:07:09,614 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:07:09,624 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:07:12,202 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:07:12,702 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:07:13,252 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:07:13,657 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:07:13,962 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:07:13,984 - streamlit_app - INFO - User input collected
+2026-03-31 15:07:13,987 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 15, 'marital-status': 'divorced', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 15:07:14,063 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:07:47,430 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:07:47,432 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:07:47,438 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:07:48,368 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:07:48,384 - streamlit_app - INFO - User input collected
+2026-03-31 15:07:48,388 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 15, 'marital-status': 'divorced', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 15:07:48,438 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:19:03,468 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:19:03,468 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:19:03,476 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:19:04,327 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:19:04,342 - streamlit_app - INFO - User input collected
+2026-03-31 15:19:04,348 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 15, 'marital-status': 'divorced', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 15:19:04,392 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:19:04,461 - streamlit_app - INFO - Feature summary stats: {'age': {'count': 1.0, 'mean': 30.0, 'std': nan, 'min': 30.0, '25%': 30.0, '50%': 30.0, '75%': 30.0, 'max': 30.0}, 'education-num': {'count': 1.0, 'mean': 15.0, 'std': nan, 'min': 15.0, '25%': 15.0, '50%': 15.0, '75%': 15.0, 'max': 15.0}, 'capital-gain': {'count': 1.0, 'mean': 0.0, 'std': nan, 'min': 0.0, '25%': 0.0, '50%': 0.0, '75%': 0.0, 'max': 0.0}, 'capital-loss': {'count': 1.0, 'mean': 0.0, 'std': nan, 'min': 0.0, '25%': 0.0, '50%': 0.0, '75%': 0.0, 'max': 0.0}, 'hours-per-week': {'count': 1.0, 'mean': 20.0, 'std': nan, 'min': 20.0, '25%': 20.0, '50%': 20.0, '75%': 20.0, 'max': 20.0}, 'age_x_hours-per-week': {'count': 1.0, 'mean': 600.0, 'std': nan, 'min': 600.0, '25%': 600.0, '50%': 600.0, '75%': 600.0, 'max': 600.0}, 'education-num_x_capital-gain': {'count': 1.0, 'mean': 0.0, 'std': nan, 'min': 0.0, '25%': 0.0, '50%': 0.0, '75%': 0.0, 'max': 0.0}, 'education-num_x_hours-per-week': {'count': 1.0, 'mean': 300.0, 'std': nan, 'min': 300.0, '25%': 300.0, '50%': 300.0, '75%': 300.0, 'max': 300.0}}
+2026-03-31 15:19:04,468 - streamlit_app - INFO - Categorical value counts: {'workclass': {'private': 1}, 'marital-status': {'divorced': 1}, 'occupation': {'tech-support': 1}, 'relationship': {'not-in-family': 1}, 'race': {'white': 1}, 'sex': {'male': 1}, 'native-country': {'united-states': 1}}
+2026-03-31 15:19:08,958 - streamlit_app - INFO - Streamlit app started
+2026-03-31 15:19:08,958 - streamlit_app - INFO - ROOT_DIR resolved as: C:\Users\letov\Projects\salary_prediction_project
+2026-03-31 15:19:08,958 - streamlit_app - INFO - UI loaded successfully
+2026-03-31 15:19:09,827 - streamlit_app - INFO - Model loaded from C:\Users\letov\Projects\salary_prediction_project\models\salary_model.joblib
+2026-03-31 15:19:09,850 - streamlit_app - INFO - User input collected
+2026-03-31 15:19:09,850 - streamlit_app - INFO - Input DataFrame created: [{'age': 30, 'workclass': 'private', 'education-num': 15, 'marital-status': 'divorced', 'occupation': 'tech-support', 'relationship': 'not-in-family', 'race': 'white', 'sex': 'male', 'capital-gain': 0, 'capital-loss': 0, 'hours-per-week': 20, 'native-country': 'united-states'}]
+2026-03-31 15:19:09,960 - streamlit_app - INFO - Preprocessing complete. Final shape: (1, 15)
+2026-03-31 15:19:09,978 - streamlit_app - INFO - Feature summary stats: {'age': {'count': 1.0, 'mean': 30.0, 'std': nan, 'min': 30.0, '25%': 30.0, '50%': 30.0, '75%': 30.0, 'max': 30.0}, 'education-num': {'count': 1.0, 'mean': 15.0, 'std': nan, 'min': 15.0, '25%': 15.0, '50%': 15.0, '75%': 15.0, 'max': 15.0}, 'capital-gain': {'count': 1.0, 'mean': 0.0, 'std': nan, 'min': 0.0, '25%': 0.0, '50%': 0.0, '75%': 0.0, 'max': 0.0}, 'capital-loss': {'count': 1.0, 'mean': 0.0, 'std': nan, 'min': 0.0, '25%': 0.0, '50%': 0.0, '75%': 0.0, 'max': 0.0}, 'hours-per-week': {'count': 1.0, 'mean': 20.0, 'std': nan, 'min': 20.0, '25%': 20.0, '50%': 20.0, '75%': 20.0, 'max': 20.0}, 'age_x_hours-per-week': {'count': 1.0, 'mean': 600.0, 'std': nan, 'min': 600.0, '25%': 600.0, '50%': 600.0, '75%': 600.0, 'max': 600.0}, 'education-num_x_capital-gain': {'count': 1.0, 'mean': 0.0, 'std': nan, 'min': 0.0, '25%': 0.0, '50%': 0.0, '75%': 0.0, 'max': 0.0}, 'education-num_x_hours-per-week': {'count': 1.0, 'mean': 300.0, 'std': nan, 'min': 300.0, '25%': 300.0, '50%': 300.0, '75%': 300.0, 'max': 300.0}}
+2026-03-31 15:19:09,978 - streamlit_app - INFO - Categorical value counts: {'workclass': {'private': 1}, 'marital-status': {'divorced': 1}, 'occupation': {'tech-support': 1}, 'relationship': {'not-in-family': 1}, 'race': {'white': 1}, 'sex': {'male': 1}, 'native-country': {'united-states': 1}}
+2026-03-31 15:19:10,162 - streamlit_app - INFO - Prediction raw value: 0
