@@ -94,12 +94,25 @@ This setup provides a reliable and interpretable baseline for income classificat
 
 ---
 
+## Key Modeling Decisions
+
+- Framed the problem as binary classification to align with common compensation thresholds
+- Selected F1 score due to class imbalance
+- Chose Random Forest for robustness and interpretability on tabular data
+- Emphasized reproducibility and auditability over maximum model complexity
+
+---
+
 ## Results & Evaluation
 
 Model performance is evaluated using standard classification metrics, with a focus on F1 score due to class imbalance.
 
-Key results:
+### Baseline Comparison
 
+A baseline Logistic Regression model was trained to establish a performance benchmark.
+The Random Forest classifier provided improved F1 performance and better recall for the >50K class, making it more suitable for identifying higher-income individuals while controlling false positives.
+
+Key results:
 - **F1 Score:** 0.7144  
 - **Precision & Recall:** Balanced to reduce false positives and false negatives  
 - **Confusion Matrix:** Used to understand classification behavior across both income classes 
@@ -134,9 +147,11 @@ These improvements would strengthen the model’s accuracy, transparency, and us
 
 ---
 
-## Streamlit Interface
+## Decision Support Interface (Streamlit)
 
 This project includes an interactive Streamlit application located in the `app/` directory (`stream_app.py`). The interface allows users to input feature values and receive a real‑time prediction of whether an individual's income is likely to be **>50K** or **<=50K**.
+
+The Streamlit app demonstrates how the trained model could be exposed as a lightweight decision support tool for analysts or HR partners, rather than as an autonomous decision-maker.
 
 ### Running the Streamlit App
 
